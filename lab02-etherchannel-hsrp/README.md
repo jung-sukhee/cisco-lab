@@ -4,7 +4,6 @@ Enterprise network simulation created using Cisco Packet Tracer.
 
 This project focuses on network redundancy, high availability and fault tolerance through the implementation of VLAN segmentation, EtherChannel link aggregation and HSRP gateway redundancy.
 
----
 
 ## Overview
 
@@ -21,7 +20,6 @@ The project combines:
 
 to provide a highly available network architecture.
 
----
 
 ## Technologies Used
 
@@ -34,7 +32,6 @@ to provide a highly available network architecture.
 - Layer 2 Switching
 - Layer 3 Switching
 
----
 
 ## Network Design
 
@@ -47,7 +44,6 @@ to provide a highly available network architecture.
 | VLAN 30 | Users | 10.30.0.0/24 |
 | VLAN 40 | Servers / DHCP | 10.40.0.0/24 |
 
----
 
 ### Device Architecture
 
@@ -59,7 +55,6 @@ to provide a highly available network architecture.
 
 The topology is designed to eliminate single points of failure.
 
----
 
 ## EtherChannel Implementation
 
@@ -74,7 +69,6 @@ Multiple physical links between switches were aggregated into logical Port-Chann
 
 If one physical link fails, traffic continues through the remaining active links without service interruption.
 
----
 
 ## HSRP Configuration
 
@@ -117,7 +111,6 @@ L3 Switch 1 operates as the Active Router while L3 Switch 2 remains in Standby m
 
 If the Active Router fails, the Standby Router automatically takes over gateway responsibilities.
 
----
 
 ## STP Operation
 
@@ -133,7 +126,6 @@ This prevents:
 
 while still preserving redundancy.
 
----
 
 ## Validation Tests
 
@@ -154,7 +146,6 @@ After restoring the link:
 - Full bandwidth was restored
 - Normal operation resumed
 
----
 
 ### HSRP Failover Test
 
@@ -168,7 +159,6 @@ Result:
 
 This verified successful gateway redundancy.
 
----
 
 ## Results
 
@@ -183,19 +173,16 @@ Successfully implemented:
 
 All hosts were able to communicate as expected and failover mechanisms operated correctly during testing.
 
----
 
 ## Network Topology
 
 ![Network Topology](sukhee_260605_etherchannel_HSRP.jpg)
 
----
 
 ## How to Open
 
 Open the `.pkt` file using Cisco Packet Tracer.
 
----
 
 ## Note
 
